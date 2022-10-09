@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
+
 import { urlFor } from "../lib/client";
 
 const Product = ({ product: { image, name, slug, price } }) => {
@@ -14,7 +15,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
             className="product-image"
           />
           <p className="product-name">{name}</p>
-          <p className="product-price">Rp{price}</p>
+          <p className="product-price">Rp {price}</p>
         </div>
       </Link>
     </div>
